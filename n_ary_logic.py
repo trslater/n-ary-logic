@@ -35,3 +35,6 @@ class NAryDigit:
 
     def __str__(self):
         return str(self.value)
+
+    def __format__(self, fmt: str) -> str:
+        return f"{self.value:{fmt}}"
